@@ -1,0 +1,24 @@
+{
+	"row1": {
+
+		"position1": {
+			"cardValue": 3,
+			"cardType": "Spade"
+		},
+		"position2": {
+			"cardValue": 3,
+			"cardType": "Heart"
+		},
+		"position3": {
+			"cardValue": 3,
+			"cardType": "Diamond"
+		},
+		"position1": {
+			"cardValue": 3,
+			"cardType": "Clubs"
+		}
+
+
+	}
+
+}

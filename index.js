@@ -1,7 +1,8 @@
-for (var i = 0; i < data.length; i++) {
-    for (var x = 0; x < data.length; x++) {
-        // console.log(data[i][x]);
-        if (data[i][x]['value'] === null)
-        console.log(data[i][x]);
+for (var column = 0; column < data.length; column++) {
+    // get each column
+    for (var row = 0; row < data.length; row++) {
+        // get column's row value
+        if (data[column][row]['value'] === null)
+        console.log(data[column][row]);
     }
 }

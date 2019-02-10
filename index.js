@@ -1,1 +1,3 @@
-console.log(data);
+data.forEach( function (row) {
+    console.log(row);
+});

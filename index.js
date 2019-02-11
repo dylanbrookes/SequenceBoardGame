@@ -15,6 +15,12 @@ class Player {
     }
 }
 
+let playerArray = [
+    player1 = new Player(1),
+    player2 = new Player(2),
+    player3 = new Player(3),
+    player4 = new Player(4) 
+];
 
 
 class Deck {
@@ -35,11 +41,12 @@ class Deck {
         this.cards = deck;
     }
 
+    
     assignPlayerCards() {
         var tempArray = [];
 
         for (var i = 0; i < 13; i++) {
-            var randomNumber = Math.floor(Math.random() * 53);
+            var randomNumber = Math.floor(Math.random() * this.cards.length);
             var tempCard = this.cards[randomNumber];
     
             // delete card from deck
@@ -47,22 +54,13 @@ class Deck {
 
             tempArray.push(tempCard);
         }
-
         return tempArray;
-        
     }
 }
 
-async function main() {
-
-    let playerArray = [
-        player1 = new Player(1),
-        player2 = new Player(2),
-        player3 = new Player(3),
-        player4 = new Player(4) 
-    ];
-    let gameDeck = await new Deck();
-    player1.cards = await gameDeck.assignPlayerCards();
+function main() {
+    let gameDeck = new Deck();
+    player1.cards = gameDeck.assignPlayerCards();
     console.log(player1);
 }
 
